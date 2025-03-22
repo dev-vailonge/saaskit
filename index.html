@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVP Espresso - Do primeiro café ao primeiro usuário em poucos dias</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white">
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center bg-gradient-to-b from-black to-[#1a1a1a] relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNjB2NjBIMHoiLz48cGF0aCBkPSJNMzYuMjUgMzBoLTEyLjV2MTIuNWgxMi41VjMweiIgZmlsbD0iIzE2MTYxNiIvPjwvZz48L3N2Zz4=')] opacity-10"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="mb-12">
+                <div class="flex items-center justify-center mb-4">
+                    <i class="fas fa-coffee text-[#FFD700] text-6xl"></i>
+                </div>
+                
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-[#FFD700] to-[#8B4513] text-transparent bg-clip-text">
+                O jeito espresso de lançar seu MVP
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+               Lance sua ideia em 3 dias com um template todo pronto para você pular a parte de desenvolvimento e focar no que realmente importa: validar a ideia.
+            </p>
+            <a href="#pricing" class="inline-block bg-[#FFD700] text-black font-bold py-4 px-8 rounded-full hover:bg-[#FFC000] transition-colors duration-300">
+                Comece seu MVP Agora
+            </a>
+        </div>
+    </section>
+
+    <!-- Pain Points Section -->
+    <section class="py-20 bg-[#1a1a1a]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Desafios que todo desenvolvedor enfrenta</h2>
+            <div class="space-y-8">
+                <div class="bg-black/50 p-6 rounded-lg">
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <div class="md:w-1/3">
+                            <i class="fas fa-lightbulb text-[#FFD700] text-3xl mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Ideias não implementadas</h3>
+                            <p class="text-gray-400 mb-4">Projetos que nunca saem do papel por falta de tempo e recursos</p>
+                        </div>
+                        <div class="md:w-2/3">
+                            <div class="rounded-lg overflow-hidden bg-black/30">
+                                <img src="img/desafio1.png" alt="Ideias não implementadas" class="w-full object-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-black/50 p-6 rounded-lg">
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <div class="md:w-1/3">
+                            <i class="fas fa-clock text-[#FFD700] text-3xl mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Tempo perdido</h3>
+                            <p class="text-gray-400 mb-4">Meses desenvolvendo funcionalidades básicas que já existem</p>
+                        </div>
+                        <div class="md:w-2/3">
+                            <div class="rounded-lg overflow-hidden bg-black/30">
+                                <img src="img/desafio3.png" alt="Tempo perdido" class="w-full object-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-black/50 p-6 rounded-lg">
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <div class="md:w-1/3">
+                            <i class="fas fa-puzzle-piece text-[#FFD700] text-3xl mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Integrações complexas</h3>
+                            <p class="text-gray-400 mb-4">Dificuldade em implementar autenticação e pagamentos</p>
+                        </div>
+                        <div class="md:w-2/3">
+                            <div class="rounded-lg overflow-hidden bg-black/30">
+                                <img src="img/desafio2.png" alt="Integrações complexas" class="w-full object-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Non-Technical Success Section -->
+    <section class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center space-y-8">
+                <h2 class="text-3xl md:text-4xl font-bold">O que eles tem que você não tem?</h2>
+                <p class="text-xl text-gray-300">Pessoas não técnicas, que não sabem programação, lançaram produtos e faturam milhões.</p>
+                <div class="rounded-lg overflow-hidden bg-black/30 max-w-3xl mx-auto">
+                    <img src="img/success.png" alt="Histórias de sucesso" class="w-full object-contain">
+                </div>
+                <p class="text-xl text-[#FFD700]">Lançaram suas ideias rapidamente <span class="bg-white px-2 py-1 rounded text-[#000000]">e você não. </span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">MVP Espresso: Sua solução</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <i class="fab fa-react text-[#FFD700] text-3xl"></i>
+                        <div>
+                            <h3 class="text-xl font-bold">Next.js + Tailwind</h3>
+                            <p class="text-gray-400">Stack moderna e performática</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <i class="fas fa-database text-[#FFD700] text-3xl"></i>
+                        <div>
+                            <h3 class="text-xl font-bold">Supabase</h3>
+                            <p class="text-gray-400">Backend pronto para uso</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <i class="fab fa-google text-[#FFD700] text-3xl"></i>
+                        <div>
+                            <h3 class="text-xl font-bold">Google Auth</h3>
+                            <p class="text-gray-400">Autenticação pronta</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <i class="fab fa-stripe text-[#FFD700] text-3xl"></i>
+                        <div>
+                            <h3 class="text-xl font-bold">Stripe</h3>
+                            <p class="text-gray-400">Pagamentos integrados</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-video bg-[#1a1a1a] rounded-lg overflow-hidden cursor-pointer" onclick="openImageModal()">
+                        <img src="img/demo.png" alt="AI-Powered WhatsApp Business Assistant Demo" class="w-full h-full object-contain">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience -->
+    <section class="py-20 bg-[#1a1a1a]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Para quem é o MVP Espresso?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-black/50 p-6 rounded-lg text-center">
+                    <i class="fas fa-code text-[#FFD700] text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Desenvolvedores Independentes</h3>
+                    <p class="text-gray-400">Que querem lançar seus projetos rapidamente</p>
+                </div>
+                <div class="bg-black/50 p-6 rounded-lg text-center">
+                    <i class="fas fa-rocket text-[#FFD700] text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Empreendedores Técnicos</h3>
+                    <p class="text-gray-400">Que precisam validar ideias rapidamente</p>
+                </div>
+                <div class="bg-black/50 p-6 rounded-lg text-center">
+                    <i class="fas fa-graduation-cap text-[#FFD700] text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Estudantes</h3>
+                    <p class="text-gray-400">Que querem criar projetos reais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="py-20 bg-[#1a1a1a]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Como funciona</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="relative">
+                    <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-[#FFD700]"></div>
+                    <div class="space-y-12">
+                        <div class="relative">
+                            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#FFD700] rounded-full"></div>
+                            <div class="ml-auto w-5/12">
+                                <h3 class="text-xl font-bold mb-2">1. Download do Template</h3>
+                                <p class="text-gray-400">Acesso imediato ao código fonte completo</p>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#FFD700] rounded-full"></div>
+                            <div class="w-5/12">
+                                <h3 class="text-xl font-bold mb-2">2. Configuração</h3>
+                                <p class="text-gray-400">Configure suas credenciais e personalize</p>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#FFD700] rounded-full"></div>
+                            <div class="ml-auto w-5/12">
+                                <h3 class="text-xl font-bold mb-2">3. Desenvolvimento</h3>
+                                <p class="text-gray-400">Adicione suas funcionalidades específicas</p>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#FFD700] rounded-full"></div>
+                            <div class="w-5/12">
+                                <h3 class="text-xl font-bold mb-2">4. Lançamento</h3>
+                                <p class="text-gray-400">Seu MVP pronto para o mercado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Escolha seu plano</h2>
+            <p class="text-xl text-[#FFD700] text-center mb-12">Preço de pré-venda com 50% de desconto por tempo limitado</p>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-[#1a1a1a] p-8 rounded-lg flex flex-col h-full">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Template Básico</h3>
+                        <div class="flex flex-col mb-6">
+                            <span class="text-lg text-gray-400 line-through">R$ 197</span>
+                            <div class="flex items-baseline">
+                                <span class="text-4xl font-bold">R$ 97</span>
+                                <span class="text-gray-400 ml-2">/único</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-[#FFD700] mr-2"></i>
+                                Código fonte completo
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-[#FFD700] mr-2"></i>
+                                Todas as integrações
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-[#FFD700] mr-2"></i>
+                                Documentação detalhada
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-auto">
+                        <a href="#" class="block w-full bg-[#FFD700] text-black text-center py-3 rounded-lg hover:bg-[#FFD700]/90 transition-colors font-medium">
+                            Comprar Agora
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-[#1a1a1a] p-8 rounded-lg border-2 border-[#FFD700] relative flex flex-col h-full">
+                    <div class="absolute -top-3 right-4 bg-[#FFD700] text-black px-4 py-1 rounded-lg text-sm font-medium">
+                        Mais Popular
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Template + Curso</h3>
+                        <div class="flex flex-col mb-6">
+                            <span class="text-lg text-gray-400 line-through">R$ 397</span>
+                            <div class="flex items-baseline">
+                                <span class="text-4xl font-bold">R$ 197</span>
+                                <span class="text-gray-400 ml-2">/único</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-[#FFD700] mr-2"></i>
+                                Tudo do plano básico
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-[#FFD700] mr-2"></i>
+                                Curso completo
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-[#FFD700] mr-2"></i>
+                                Check list para lançamento
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-[#FFD700] mr-2"></i>
+                                Todas as novas atualizações
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-auto">
+                        <a href="#" class="block w-full bg-[#FFD700] text-black text-center py-3 rounded-lg hover:bg-[#FFD700]/90 transition-colors font-medium">
+                            Comprar Agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-[#1a1a1a]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Perguntas Frequentes</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="faq-item bg-black/50 p-6 rounded-lg">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl font-bold">Preciso ter experiência com Next.js?</h3>
+                        <i class="fas fa-chevron-down text-[#FFD700]"></i>
+                    </div>
+                    <div class="mt-4 text-gray-400 hidden">
+                        Não! O template é perfeito para iniciantes e inclui documentação detalhada.
+                    </div>
+                </div>
+                <div class="faq-item bg-black/50 p-6 rounded-lg">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl font-bold">Como funciona as atualizações?</h3>
+                        <i class="fas fa-chevron-down text-[#FFD700]"></i>
+                    </div>
+                    <div class="mt-4 text-gray-400 hidden">
+                        Se você comprar o plano + curso, você recebera todas as novas atualizações do template.
+                    </div>
+                </div>
+                <div class="faq-item bg-black/50 p-6 rounded-lg">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl font-bold">Posso personalizar o template?</h3>
+                        <i class="fas fa-chevron-down text-[#FFD700]"></i>
+                    </div>
+                    <div class="mt-4 text-gray-400 hidden">
+                        Sim! O código é totalmente personalizável e você tem acesso completo ao código fonte.
+                    </div>
+                </div>
+                <div class="faq-item bg-black/50 p-6 rounded-lg">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl font-bold">O que tem no curso?</h3>
+                        <i class="fas fa-chevron-down text-[#FFD700]"></i>
+                    </div>
+                    <div class="mt-4 text-gray-400 hidden">
+                        Curso possui 3 módulos:
+                        <ul class="list-disc list-inside">
+                            <li>
+                                <i class="fas fa-check text-[#FFD700] mr-2"></i>
+                                Módulo 1: Como ter uma ideia?
+                            </li>
+                            <li>
+                                <i class="fas fa-check text-[#FFD700] mr-2"></i>
+                                Módulo 2: Como validar a ideia?
+                            </li>
+                            <li>
+                                <i class="fas fa-check text-[#FFD700] mr-2"></i>
+                                Módulo 3: Como configurar seu MVP?
+                            </li>
+                        </ul>
+                        Material de apoio:
+                        <ul class="list-disc list-inside">
+                            <li>
+                                <i class="fas fa-check text-[#FFD700] mr-2"></i>
+                                Checklist para lançamento
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 bg-black">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Pronto para lançar seu MVP?</h2>
+            <p class="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+                Comece agora e tenha seu projeto no ar em poucos dias
+            </p>
+
+            <div class="container mx-auto px-4 mb-12">
+                <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
+                    <img src="img/depoimento1.png" alt="Depoimento 1" class="rounded-lg">
+                    <img src="img/depoimento2.png" alt="Depoimento 2" class="rounded-lg">
+                </div>
+            </div>
+            <a href="#pricing" class="inline-block bg-[#FFD700] text-black font-bold py-4 px-8 rounded-full hover:bg-[#FFC000] transition-colors duration-300">
+                Comece Agora
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1a1a1a] py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">MVP Espresso</h3>
+                    <p class="text-gray-400">Transformando ideias em MVPs rapidamente</p>
+                    <p class="text-gray-400">Criado por <a href="https://www.instagram.com/devvailonge" target="_blank">@devvai.longe</a></p>
+                </div>
+            
+                <div>
+                    <h4 class="font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="terms.html" class="text-gray-400 hover:text-[#FFD700]">Termos de Uso</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-[#FFD700]">Privacidade</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 MVP Espresso. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="fixed inset-0 bg-black/90 z-50 hidden items-center justify-center p-4" onclick="closeImageModal(event)">
+        <div class="relative max-w-[90vw] max-h-[90vh]" onclick="event.stopPropagation()">
+            <img src="img/demo.png" alt="AI-Powered WhatsApp Business Assistant Demo" class="max-w-full max-h-[90vh] object-contain">
+            <button onclick="closeImageModal(event)" class="absolute top-4 right-4 text-white hover:text-[#FFD700] text-xl">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
