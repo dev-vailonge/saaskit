@@ -165,4 +165,36 @@ document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape' && !document.getElementById('imageModal').classList.contains('hidden')) {
         closeImageModal();
     }
-}); 
+});
+
+// Carousel functionality
+let currentSlide = 0;
+const totalSlides = 3;
+
+function updateCarousel() {
+    const carousel = document.getElementById('carousel');
+    if (!carousel) return;
+    
+    carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+    
+    // Update dots
+    document.querySelectorAll('.carousel-dot').forEach((dot, index) => {
+        dot.classList.toggle('bg-[#FFD700]', index === currentSlide);
+        dot.classList.toggle('bg-gray-400', index !== currentSlide);
+    });
+}
+
+function moveCarousel(direction) {
+    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+    updateCarousel();
+}
+
+function goToSlide(slideIndex) {
+    currentSlide = slideIndex;
+    updateCarousel();
+}
+
+// Auto-advance carousel every 5 seconds
+setInterval(() => {
+    moveCarousel(1);
+}, 5000); 

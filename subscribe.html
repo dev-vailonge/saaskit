@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVP Espresso - Lista de Espera</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-black text-white">
+    <main class="min-h-screen flex flex-col">
+        <!-- Hero Section -->
+        <section class="flex-grow py-16 bg-gradient-to-b from-black to-[#1a1a1a]">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center">
+                    <!-- Logo -->
+                    <div class="flex items-center justify-center mb-8">
+                        <i class="fas fa-coffee text-[#FFD700] text-5xl"></i>
+                    </div>
+
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-[#FFD700] to-[#8B4513] text-transparent bg-clip-text">
+                        Template completo para seu MVP
+                    </h1>
+
+                    <p class="text-xl text-gray-300 mb-8">
+                        Lance sua ideia em 3 dias com um template pronto que inclui autenticação, 
+                        pagamentos e backend. Economize meses de desenvolvimento.
+                    </p>
+
+                    <!-- Features Grid -->
+                    <div class="grid md:grid-cols-2 gap-6 mb-12 text-left">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check text-[#FFD700] mt-1"></i>
+                            <div>
+                                <h3 class="font-bold mb-1">Next.js + Tailwind</h3>
+                                <p class="text-gray-400">Stack moderna e performática</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check text-[#FFD700] mt-1"></i>
+                            <div>
+                                <h3 class="font-bold mb-1">Supabase</h3>
+                                <p class="text-gray-400">Backend pronto para uso</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check text-[#FFD700] mt-1"></i>
+                            <div>
+                                <h3 class="font-bold mb-1">Google Auth</h3>
+                                <p class="text-gray-400">Autenticação integrada</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check text-[#FFD700] mt-1"></i>
+                            <div>
+                                <h3 class="font-bold mb-1">Stripe</h3>
+                                <p class="text-gray-400">Pagamentos configurados</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email Form -->
+                    <div class="bg-[#1a1a1a] p-8 rounded-lg max-w-xl mx-auto">
+                        <h2 class="text-2xl font-bold mb-4">Entre para a lista de espera</h2>
+                        <p class="text-gray-400 mb-6">Seja o primeiro a saber quando lançarmos e garanta 50% de desconto.</p>
+                        <form id="subscribeForm" class="space-y-4">
+                            <div>
+                                <input type="email" 
+                                       placeholder="Seu melhor e-mail" 
+                                       class="w-full px-4 py-3 rounded-lg bg-black border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-[#FFD700]"
+                                       required>
+                            </div>
+                            <button type="submit" 
+                                    class="w-full bg-[#FFD700] text-black font-bold py-3 px-6 rounded-lg hover:bg-[#FFC000] transition-colors duration-300">
+                                Entrar para Lista
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-8 bg-black border-t border-gray-800">
+            <div class="container mx-auto px-4 text-center text-gray-400">
+                <p>MVP Espresso &copy; 2024</p>
+                <p class="mt-2">Criado por <a href="https://www.instagram.com/devvailonge" target="_blank" class="text-[#FFD700]">@devvai.longe</a></p>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        document.getElementById('subscribeForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your email collection logic here
+            alert('Obrigado! Em breve entraremos em contato.');
+        });
+    </script>
+</body>
+</html> 
