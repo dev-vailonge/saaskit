@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação - MVP Espresso</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white">
+
+
+    <div class="flex min-h-screen pt-24">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-[#1a1a1a] fixed h-[calc(100vh-6rem)] overflow-y-auto">
+            <nav class="p-4">
+                <ul class="space-y-2">
+                    <li>
+                        <a href="#intro" class="block py-2 px-4 rounded hover:bg-black/50 transition-colors">
+                            Introdução
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#github" class="block py-2 px-4 rounded hover:bg-black/50 transition-colors">
+                            Criar Conta GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#git" class="block py-2 px-4 rounded hover:bg-black/50 transition-colors">
+                            Instalar Git
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#nodejs" class="block py-2 px-4 rounded hover:bg-black/50 transition-colors">
+                            Instalar Node.js
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#template" class="block py-2 px-4 rounded hover:bg-black/50 transition-colors">
+                            Download do Template
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#supabase" class="block py-2 px-4 rounded hover:bg-black/50 transition-colors">
+                            Criar Conta Supabase
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#cursor" class="block py-2 px-4 rounded hover:bg-black/50 transition-colors">
+                            Download Cursor
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#vercel" class="block py-2 px-4 rounded hover:bg-black/50 transition-colors">
+                            Criar Conta Vercel
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#upstash" class="block py-2 px-4 rounded hover:bg-black/50 transition-colors">
+                            Criar Conta Upstash
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#stripe" class="block py-2 px-4 rounded hover:bg-black/50 transition-colors">
+                            Criar Conta Stripe
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#running" class="block py-2 px-4 rounded hover:bg-black/50 transition-colors">
+                            Rodando o Projeto
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#env" class="block py-2 px-4 rounded hover:bg-black/50 transition-colors">
+                            Configurar Variáveis ENV
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#deploy" class="block py-2 px-4 rounded hover:bg-black/50 transition-colors">
+                            Deploy do Projeto
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#customizing" class="block py-2 px-4 rounded hover:bg-black/50 transition-colors">
+                            Customização com Cursor
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#troubleshooting" class="block py-2 px-4 rounded hover:bg-black/50 transition-colors">
+                            Solução de Problemas
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="ml-64 flex-1 p-8">
+            <div class="max-w-4xl">
+                <section id="intro" class="mb-16">
+                    <h1 class="text-4xl font-bold mb-8">Documentação MVP Espresso</h1>
+                    <p class="text-gray-300 mb-4">
+                        Bem-vindo à documentação do MVP Espresso! Este guia irá te ajudar a configurar e personalizar seu projeto do zero.
+                        Siga cada passo cuidadosamente para garantir uma configuração adequada do ambiente.
+                    </p>
+                    <div class="bg-[#1a1a1a] p-4 rounded-lg">
+                        <h3 class="text-[#FFD700] font-bold mb-2">Pré-requisitos</h3>
+                        <ul class="list-disc list-inside text-gray-300">
+                            <li>Conhecimento básico de terminal/linha de comando</li>
+                            <li>Editor de código (recomendamos o Cursor)</li>
+                            <li>Conexão estável com a internet</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="github" class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6">Criar Conta GitHub</h2>
+                    <div class="space-y-4">
+                        <p class="text-gray-300">O GitHub é onde você irá armazenar seu código e fazer o deploy do projeto.</p>
+                        <ol class="space-y-4 text-gray-300">
+                            <li>1. Acesse <a href="https://github.com" class="text-[#FFD700] hover:underline" target="_blank">github.com</a></li>
+                            <li>2. Clique em "Sign up" no canto superior direito</li>
+                            <li>3. Preencha suas informações e siga o processo de verificação</li>
+                            <li>4. Confirme seu email</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section id="git" class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6">Instalar Git</h2>
+                    <div class="space-y-4">
+                        <p class="text-gray-300">Git é essencial para controle de versão e deploy do projeto.</p>
+                        
+                        <ol class="space-y-4 text-gray-300">
+                            <li>1. Acesse <a href="https://git-scm.com/downloads" class="text-[#FFD700] hover:underline" target="_blank">git-scm.com/downloads</a></li>
+                            <li>2. Clique no botão de download para seu sistema operacional</li>
+                            <li>3. Execute o instalador baixado</li>
+                            <li>4. Mantenha as opções padrão durante a instalação</li>
+                            <li>5. Após a instalação, abra o terminal e verifique se o Git foi instalado corretamente:</li>
+                            <code class="block bg-[#1a1a1a] p-2 rounded mt-2">git --version</code>
+                        </ol>
+
+                        <div class="bg-[#1a1a1a] p-6 rounded-lg mt-6">
+                            <h4 class="text-xl font-bold mb-4 text-[#FFD700]">Dica</h4>
+                            <p class="text-gray-300">
+                                Durante a instalação, mantenha as configurações padrão sugeridas pelo instalador. 
+                                Isso garantirá uma instalação adequada para a maioria dos usuários.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="nodejs" class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6">Instalar Node.js</h2>
+                    <div class="space-y-4">
+                        <p class="text-gray-300">Node.js é necessário para executar o projeto localmente.</p>
+                        <ol class="space-y-4 text-gray-300">
+                            <li>1. Acesse <a href="https://nodejs.org" class="text-[#FFD700] hover:underline" target="_blank">nodejs.org</a></li>
+                            <li>2. Baixe a versão LTS (recomendada para a maioria dos usuários)</li>
+                            <li>3. Execute o instalador</li>
+                            <li>4. Verifique a instalação no terminal:</li>
+                            <code class="block bg-[#1a1a1a] p-2 rounded mt-2">node --version</code>
+                        </ol>
+                    </div>
+                </section>
+
+                <section id="template" class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6">Download do Template</h2>
+                    <div class="space-y-4">
+                        <p class="text-gray-300">Após a compra, você receberá acesso ao repositório do template.</p>
+                        <ol class="space-y-4 text-gray-300">
+                            <li>1. Acesse o link do Google Drive fornecido</li>
+                            <li>2. Faça o download do arquivo zip</li>
+                            <li>3. Descompacte o arquivo</li>
+                            <li>4. Entre na pasta do projeto:</li>
+                            <code class="block bg-[#1a1a1a] p-2 rounded mt-2">cd mvp-espresso</code>
+                        </ol>
+                    </div>
+                </section>
+
+                <section id="supabase" class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6">Criar Conta Supabase</h2>
+                    <div class="space-y-4">
+                        <p class="text-gray-300">Supabase é nosso backend-as-a-service, fornecendo banco de dados e autenticação.</p>
+                        <ol class="space-y-4 text-gray-300">
+                            <li>1. Acesse <a href="https://supabase.com" class="text-[#FFD700] hover:underline" target="_blank">supabase.com</a></li>
+                            <li>2. Clique em "Start your project"</li>
+                            <li>3. Faça login com GitHub</li>
+                            <li>4. Crie um novo projeto</li>
+                            <li>5. Guarde as credenciais (URL e anon key)</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section id="cursor" class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6">Download Cursor</h2>
+                    <div class="space-y-4">
+                        <p class="text-gray-300">Cursor é um editor de código com IA integrada, otimizado para o MVP Espresso.</p>
+                        <ol class="space-y-4 text-gray-300">
+                            <li>1. Acesse <a href="https://cursor.sh" class="text-[#FFD700] hover:underline" target="_blank">cursor.sh</a></li>
+                            <li>2. Baixe a versão para seu sistema operacional</li>
+                            <li>3. Instale e abra o Cursor</li>
+                            <li>4. Faça login com sua conta GitHub</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section id="vercel" class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6">Criar Conta Vercel</h2>
+                    <div class="space-y-4">
+                        <p class="text-gray-300">Vercel é a plataforma de deploy que usaremos.</p>
+                        <ol class="space-y-4 text-gray-300">
+                            <li>1. Acesse <a href="https://vercel.com" class="text-[#FFD700] hover:underline" target="_blank">vercel.com</a></li>
+                            <li>2. Clique em "Sign Up"</li>
+                            <li>3. Faça login com GitHub</li>
+                            <li>4. Complete o processo de registro</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section id="upstash" class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6">Criar Conta Upstash</h2>
+                    <div class="space-y-4">
+                        <p class="text-gray-300">Upstash fornece Redis serverless para nosso projeto.</p>
+                        <ol class="space-y-4 text-gray-300">
+                            <li>1. Acesse <a href="https://upstash.com" class="text-[#FFD700] hover:underline" target="_blank">upstash.com</a></li>
+                            <li>2. Clique em "Get Started"</li>
+                            <li>3. Faça login com GitHub</li>
+                            <li>4. Crie um novo banco Redis</li>
+                            <li>5. Guarde as credenciais de conexão</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section id="stripe" class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6">Criar Conta Stripe</h2>
+                    <div class="space-y-4">
+                        <p class="text-gray-300">Stripe é nossa plataforma de pagamentos.</p>
+                        <ol class="space-y-4 text-gray-300">
+                            <li>1. Acesse <a href="https://stripe.com" class="text-[#FFD700] hover:underline" target="_blank">stripe.com</a></li>
+                            <li>2. Clique em "Start now"</li>
+                            <li>3. Crie sua conta</li>
+                            <li>4. Complete as informações da empresa</li>
+                            <li>5. Guarde as chaves de API (publishable e secret)</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section id="running" class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6">Rodando o Projeto</h2>
+                    <div class="space-y-4">
+                        <p class="text-gray-300">Siga estes passos para executar o projeto localmente.</p>
+                        <ol class="space-y-4 text-gray-300">
+                            <li>1. Instale as dependências:</li>
+                            <code class="block bg-[#1a1a1a] p-2 rounded mt-2">npm install</code>
+                            <li>2. Configure as variáveis de ambiente (próxima seção)</li>
+                            <li>3. Execute o projeto em modo de desenvolvimento:</li>
+                            <code class="block bg-[#1a1a1a] p-2 rounded mt-2">npm run dev</code>
+                            <li>4. Acesse <code class="inline bg-[#1a1a1a] px-2 rounded">http://localhost:3000</code></li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section id="env" class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6">Configurar Variáveis ENV</h2>
+                    <div class="space-y-4">
+                        <p class="text-gray-300">Configure as variáveis de ambiente necessárias.</p>
+                        <ol class="space-y-4 text-gray-300">
+                            <li>1. Copie o arquivo .env.example:</li>
+                            <code class="block bg-[#1a1a1a] p-2 rounded mt-2">cp .env.example .env.local</code>
+                            <li>2. Preencha as variáveis com suas credenciais:</li>
+                            <pre class="block bg-[#1a1a1a] p-4 rounded mt-2 overflow-x-auto">
+NEXT_PUBLIC_SUPABASE_URL=sua_url_supabase
+NEXT_PUBLIC_SUPABASE_ANON_KEY=sua_chave_supabase
+STRIPE_SECRET_KEY=sua_chave_secreta_stripe
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=sua_chave_publica_stripe
+UPSTASH_REDIS_REST_URL=sua_url_upstash
+UPSTASH_REDIS_REST_TOKEN=seu_token_upstash</pre>
+                        </ol>
+                    </div>
+                </section>
+
+                <section id="deploy" class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6">Deploy do Projeto</h2>
+                    <div class="space-y-4">
+                        <p class="text-gray-300">Deploy seu projeto na Vercel.</p>
+                        <ol class="space-y-4 text-gray-300">
+                            <li>1. Faça push do seu código para o GitHub</li>
+                            <li>2. Acesse <a href="https://vercel.com" class="text-[#FFD700] hover:underline" target="_blank">vercel.com</a></li>
+                            <li>3. Clique em "New Project"</li>
+                            <li>4. Importe seu repositório</li>
+                            <li>5. Configure as variáveis de ambiente</li>
+                            <li>6. Clique em "Deploy"</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section id="customizing" class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6">Customização com Cursor</h2>
+                    <div class="space-y-4">
+                        <p class="text-gray-300">Use o Cursor para personalizar seu projeto eficientemente.</p>
+                        <div class="bg-[#1a1a1a] p-6 rounded-lg space-y-4">
+                            <h4 class="text-xl font-bold">Recursos do Cursor</h4>
+                            <ul class="list-disc list-inside text-gray-300">
+                                <li>Autocompletar com IA</li>
+                                <li>Refatoração inteligente</li>
+                                <li>Debugging integrado</li>
+                                <li>Terminal integrado</li>
+                            </ul>
+                        </div>
+                        <p class="text-gray-300 mt-4">
+                            Use o comando <code class="inline bg-[#1a1a1a] px-2 rounded">Cmd/Ctrl + K</code> para acessar o comando rápido do Cursor
+                            e explorar suas funcionalidades.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="troubleshooting" class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6">Solução de Problemas</h2>
+                    <div class="space-y-4">
+                        <div class="bg-[#1a1a1a] p-6 rounded-lg">
+                            <h4 class="text-xl font-bold mb-4">Problemas Comuns</h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <h5 class="text-[#FFD700] font-bold">Erro de instalação de dependências</h5>
+                                    <p class="text-gray-300">Tente remover node_modules e package-lock.json:</p>
+                                    <code class="block bg-black p-2 rounded mt-2">
+rm -rf node_modules package-lock.json && npm install</code>
+                                </div>
+                                <div>
+                                    <h5 class="text-[#FFD700] font-bold">Erro de variáveis de ambiente</h5>
+                                    <p class="text-gray-300">Verifique se todas as variáveis em .env.local estão preenchidas corretamente</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-[#FFD700] font-bold">Erro de build na Vercel</h5>
+                                    <p class="text-gray-300">Verifique se todas as variáveis de ambiente estão configuradas no projeto da Vercel</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mt-4">
+                            Para mais ajuda, acesse nossa comunidade no Discord ou abra uma issue no GitHub.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Highlight current section in sidebar
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('bg-black/50');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('bg-black/50');
+                }
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
