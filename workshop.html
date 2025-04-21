@@ -15,19 +15,19 @@
 </head>
 <body class="bg-black text-white">
     <!-- Hero Section -->
-    <section class="min-h-screen flex items-center">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center gap-12 max-w-6xl mx-auto">
+    <section class="min-h-screen flex items-center py-12 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col lg:flex-row items-center gap-8 max-w-6xl mx-auto">
                 <!-- Left Column - Text Content -->
-                <div class="md:w-1/2">
-                    <h1 class="text-5xl font-bold mb-6">
-                        Workshop Gratuito: 
-                        <span class="text-[#FFD700] block mt-2">Construindo seu MVP em 3 Dias</span>
+                <div class="w-full lg:w-1/2 text-center lg:text-left">
+                    <h1 class="text-4xl lg:text-5xl font-bold mb-6">
+                        3 Passos Simples Para Lançar Seus Projetos e
+                        <span class="text-[#FFD700] block mt-2">Ter Seus Primeiros Usuários Pagantes.</span>
                     </h1>
-                    <p class="text-xl text-gray-300 mb-8">
-                        O que acontece se juntarmos programação e inteligência artificial? Você ganah velocidade para construir seu MVP em pouco tempo.
+                    <p class="text-lg lg:text-xl text-gray-300 mb-8">
+                        O que acontece se juntarmos programação e inteligência artificial? Você ganha velocidade para construir seu MVP em pouco tempo.
                     </p>
-                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-[#FFD700] mb-8">
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 text-[#FFD700] mb-8">
                         <div class="flex items-center gap-2">
                             <i class="fas fa-calendar"></i>
                             <span>05 de Maio de 2025</span>
@@ -40,28 +40,27 @@
                 </div>
 
                 <!-- Right Column - Registration Form -->
-                <div class="md:w-1/2">
-                    <div class="bg-[#1a1a1a] p-8 rounded-lg">
+                <div class="w-full lg:w-1/2">
+                    <div class="bg-[#1a1a1a] p-6 sm:p-8 rounded-lg max-w-md mx-auto">
                         <h2 class="text-2xl font-bold mb-6 text-center">Garanta sua vaga gratuita</h2>
                         <form id="workshopForm" class="space-y-4">
                             <div>
                                 <label for="name" class="block text-sm font-medium mb-2">Nome Completo</label>
                                 <input type="text" id="name" name="name" required
-                                    class="w-full px-4 py-2 bg-black border border-gray-700 rounded-lg focus:outline-none focus:border-[#FFD700]">
+                                    class="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:outline-none focus:border-[#FFD700]">
                             </div>
                             <div>
                                 <label for="email" class="block text-sm font-medium mb-2">Email</label>
                                 <input type="email" id="email" name="email" required
-                                    class="w-full px-4 py-2 bg-black border border-gray-700 rounded-lg focus:outline-none focus:border-[#FFD700]">
+                                    class="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:outline-none focus:border-[#FFD700]">
                             </div>
                             <div>
                                 <label for="phone" class="block text-sm font-medium mb-2">Telefone</label>
                                 <input type="tel" id="phone" name="phone" required
-                                    class="w-full px-4 py-2 bg-black border border-gray-700 rounded-lg focus:outline-none focus:border-[#FFD700]">
+                                    class="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:outline-none focus:border-[#FFD700]">
                             </div>
-                            <input type="hidden" id="source" name="source" value="workshop">
                             <button type="submit"
-                                class="w-full bg-[#FFD700] text-black font-bold py-3 px-6 rounded-lg hover:bg-[#FFD700]/90 transition-colors">
+                                class="w-full bg-[#FFD700] text-black font-bold py-4 px-6 rounded-lg hover:bg-[#FFD700]/90 transition-colors text-lg">
                                 Inscrever-se Gratuitamente
                             </button>
                         </form>
@@ -72,43 +71,49 @@
     </section>
 
     <!-- Target Audience Section -->
-    <section class="py-16 px-4">
+    <section class="py-12 sm:py-16 px-4">
         <div class="container mx-auto max-w-4xl">
-            <h2 class="text-3xl font-bold mb-12 text-center">Para quem é esse workshop?</h2>
-            <div class="grid gap-8">
-                <div class="bg-[#1a1a1a] p-8 rounded-lg flex items-start gap-6">
-                    <div class="text-[#FFD700] text-3xl">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-3">Estudantes de programação cansados por não achar vagas</h3>
-                        <p class="text-gray-300">
-                            Descubra como criar seu próprio caminho na programação, sem depender exclusivamente do mercado tradicional.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="bg-[#1a1a1a] p-8 rounded-lg flex items-start gap-6">
-                    <div class="text-[#FFD700] text-3xl">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-3">Programadores que querem começar seus próprios projetos</h3>
-                        <p class="text-gray-300">
-                            Aprenda a transformar seu conhecimento técnico em produtos reais e rentáveis.
-                        </p>
+            <h2 class="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-center">Para quem é esse workshop?</h2>
+            <div class="grid gap-6 sm:gap-8">
+                <div class="bg-[#1a1a1a] p-6 sm:p-8 rounded-lg">
+                    <div class="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+                        <div class="text-[#FFD700] text-3xl">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 sm:mb-3">Estudantes de programação cansados por não achar vagas</h3>
+                            <p class="text-gray-300">
+                                Descubra como criar seu próprio caminho na programação, sem depender exclusivamente do mercado tradicional.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="bg-[#1a1a1a] p-8 rounded-lg flex items-start gap-6">
-                    <div class="text-[#FFD700] text-3xl">
-                        <i class="fas fa-rocket"></i>
+                <div class="bg-[#1a1a1a] p-6 sm:p-8 rounded-lg">
+                    <div class="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+                        <div class="text-[#FFD700] text-3xl">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 sm:mb-3">Programadores que querem começar seus próprios projetos</h3>
+                            <p class="text-gray-300">
+                                Aprenda a transformar seu conhecimento técnico em produtos reais e rentáveis.
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-3">Você que tá buscando mais independência através de código</h3>
-                        <p class="text-gray-300">
-                            Descubra como usar a programação como ferramenta para construir sua liberdade profissional que você tanto deseja.
-                        </p>
+                </div>
+
+                <div class="bg-[#1a1a1a] p-6 sm:p-8 rounded-lg">
+                    <div class="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+                        <div class="text-[#FFD700] text-3xl">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 sm:mb-3">Você que tá buscando mais independência através de código</h3>
+                            <p class="text-gray-300">
+                                Descubra como usar a programação como ferramenta para construir sua liberdade profissional que você tanto deseja.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -116,11 +121,11 @@
     </section>
 
     <!-- What You'll Learn Section -->
-    <section class="py-16 px-4 bg-[#1a1a1a]">
+    <section class="py-12 sm:py-16 px-4 bg-[#1a1a1a]">
         <div class="container mx-auto max-w-4xl">
-            <h2 class="text-3xl font-bold mb-12 text-center">O que você vai aprender?</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-black p-6 rounded-lg">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-center">O que você vai aprender?</h2>
+            <div class="grid sm:grid-cols-2 gap-6 sm:gap-8">
+                <div class="bg-black p-6 sm:p-8 rounded-lg">
                     <div class="text-[#FFD700] text-2xl mb-4">
                         <i class="fas fa-code"></i>
                     </div>
@@ -129,7 +134,7 @@
                         Aprenda quais são as tecnologias mais utilizadas no mercado para construir seu projetos rapidamente e sem gastar nada.
                     </p>
                 </div>
-                <div class="bg-black p-6 rounded-lg">
+                <div class="bg-black p-6 sm:p-8 rounded-lg">
                     <div class="text-[#FFD700] text-2xl mb-4">
                         <i class="fas fa-brain"></i>
                     </div>
@@ -138,7 +143,7 @@
                         Como conseguir uma aplicação web que utiliza inteligência artificial por baixo dos panos.
                     </p>
                 </div>
-                <div class="bg-black p-6 rounded-lg">
+                <div class="bg-black p-6 sm:p-8 rounded-lg">
                     <div class="text-[#FFD700] text-2xl mb-4">
                         <i class="fas fa-credit-card"></i>
                     </div>
@@ -147,7 +152,7 @@
                         Como conseguir seu primeiro cliente e começar a validar sua ideia.
                     </p>
                 </div>
-                <div class="bg-black p-6 rounded-lg">
+                <div class="bg-black p-6 sm:p-8 rounded-lg">
                     <div class="text-[#FFD700] text-2xl mb-4">
                         <i class="fas fa-rocket"></i>
                     </div>
@@ -161,21 +166,20 @@
     </section>
 
     <!-- About Section -->
-    <section class="py-16 px-4">
+    <section class="py-12 sm:py-16 px-4">
         <div class="container mx-auto max-w-4xl">
-            <div class="flex flex-col md:flex-row items-center gap-8">
-                <div class="md:w-1/3">
+            <div class="flex flex-col sm:flex-row items-center gap-8">
+                <div class="w-full sm:w-1/3">
                     <img src="img/roque.jpg" alt="Roque Buarque" class="w-64 h-96 object-cover rounded-lg mx-auto shadow-lg">
                 </div>
-                <div class="md:w-2/3">
-                    <h2 class="text-3xl font-bold mb-4">Sobre Roque Buarque</h2>
+                <div class="w-full sm:w-2/3 text-center sm:text-left">
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-4">Sobre Roque Buarque</h2>
                     <p class="text-gray-300 mb-4">
                         Roque é um programador e empreendedor que decidiu usar sua experiência em grandes empresas como o Spotify para construir sua própria liberdade. Fundador da DevSpace, uma comunidade que já ajudou milhares de pessoas a aprender programação do absoluto zero, Roque também lidera projetos como o Escola Nova Era Tech, MentorSpace, Youzit e LaunchIn, todos com o objetivo de transformar conhecimento em produto e produto em independência.
                     </p>
                     <p class="text-gray-300 mb-4">
                         Ele acredita que o código pode ser uma ponte para uma vida mais leve, produtiva e autêntica, e que empreender com tecnologia não precisa ser complicado. Com uma abordagem prática e direta, Roque cria ferramentas e experiências para desenvolvedores que querem tirar ideias do papel, testar rápido e lançar antes de terminar o café.
                     </p>
-                   
                 </div>
             </div>
         </div>
